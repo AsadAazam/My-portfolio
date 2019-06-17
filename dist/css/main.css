@@ -61,7 +61,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.JPG");
+      background: url("./img/portrait.JPG");
       border-radius: 50%;
       border: solid 3px #6344eb; }
   .menu .nav-link {
@@ -234,6 +234,9 @@ main {
   background: #032423;
   color: #fff;
   height: 60px; }
+
+.contact {
+  min-height: calc(100vh-60px); }
 
 @media screen and (min-width: 1171px) {
   .projects {

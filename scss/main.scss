@@ -174,4 +174,7 @@ main {
   color: set-text-color($primary-color);
   height: 60px;
 }
+.contact {
+  min-height: calc(100vh-60px);
+}
 @import "mobile";
