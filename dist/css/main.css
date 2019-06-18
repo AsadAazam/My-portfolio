@@ -240,19 +240,8 @@ main {
 
 .container {
   display: grid;
-  grid-template-areas: "box1 box2 box3" "box4 box5 box6";
-  grid-gap: 30px;
+  grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
-  .container .box-1 {
-    grid-area: box1; }
-  .container .box-2 {
-    grid-area: box2; }
-  .container .box-3 {
-    grid-area: box3; }
-  .container .box-4 {
-    grid-area: box4; }
-  .container .box-5 {
-    grid-area: box5; }
   .container .box {
     width: 25%;
     float: left;
@@ -314,7 +303,6 @@ main {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .conatiner {
-    grid-template-areas: "box1 box2";
     grid-template-columns: 2fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
@@ -328,7 +316,6 @@ main {
       margin-top: 1rem;
       font-size: 5rem; }
   .conatiner {
-    grid-template-areas: "box1" "box2" "box3";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: 1fr; } }

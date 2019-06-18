@@ -55,8 +55,6 @@
     grid-template-columns: 1fr;
   }
   .conatiner {
-    grid-template-areas: "box1 box2";
-
     grid-template-columns: 2fr;
   }
   .projects {
@@ -77,11 +75,6 @@
     }
   }
   .conatiner {
-    grid-template-areas:
-      "box1"
-      "box2"
-      "box3";
-
     grid-template-columns: 1fr;
   }
   .projects {
