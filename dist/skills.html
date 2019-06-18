@@ -10,10 +10,12 @@
       integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E"
       crossorigin="anonymous"
     />
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Welcome To My Portfolio</title>
+    <title>About Me</title>
   </head>
-  <body id="bg-img">
+  <body>
     <header>
       <div class="menu-btn">
         <div class="btn-line"></div>
@@ -25,13 +27,13 @@
           <div class="portrait"></div>
         </div>
         <ul class="menu-nav">
-          <li class="nav-items current">
+          <li class="nav-items">
             <a href="index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-items">
             <a href="about.html" class="nav-link">About Me</a>
           </li>
-          <li class="nav-items">
+          <li class="nav-items current">
             <a href="skills.html" class="nav-link">My Skills</a>
           </li>
           <li class="nav-items">
@@ -43,26 +45,51 @@
         </ul>
       </nav>
     </header>
-    <main id="home">
-      <h1 class="lg-heading">Asad <span class="text-secondary">Aazam</span></h1>
+    <main id="skills">
+      <h1 class="lg-heading">My <span class="text-secondary">Skills</span></h1>
       <h2 class="sm-heading">
-        Java Developer,BlockChain Enthusiast,NodeJS and MongoDb Programmer
+        Here are some of my skills...
       </h2>
-      <div class="icons">
-        <a href="#">
-          <i class="fab fa-twitter fa-2x"></i>
-        </a>
-        <a href="https://www.facebook.com/myheartisyoursjaan">
-          <i class="fab fa-facebook fa-2x"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/asad-aazam-515735153/">
-          <i class="fab fa-linkedin fa-2x"></i>
-        </a>
-        <a href="https://github.com/AsadAazam">
-          <i class="fab fa-github fa-2x"></i>
-        </a>
+
+      <div class="container">
+        <div class="box box-1">
+          <div class="chart" data-percent="73">73%</div>
+          <h1>HTML</h1>
+        </div>
+        <div class="box  box-2">
+          <div class="chart" data-percent="90">90%</div>
+          <h1>MongoDB</h1>
+        </div>
+        <div class="box  box-3">
+          <div class="chart" data-percent="95">95%</div>
+          <h1>JAVA</h1>
+        </div>
+        <div class="box box-4">
+          <div class="chart" data-percent="83">83%</div>
+          <h1>NodeJs</h1>
+        </div>
+        <div class="box box-5">
+          <div class="chart" data-percent="80">80%</div>
+          <h1>CSS</h1>
+        </div>
       </div>
     </main>
+    <footer id="main-footer">Copyright &copy; 2019</footer>
     <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.easypiechart.js"></script>
+
+    <script>
+      $(function() {
+        $(".chart").easyPieChart({
+          scaleColor: false,
+          lineWidth: 10,
+          barColor: "#6344eb",
+          trackColor: "#fff",
+          lineCap: "circle",
+          animate: 2000
+        });
+      });
+    </script>
   </body>
 </html>

@@ -177,4 +177,58 @@ main {
 .contact {
   min-height: calc(100vh-60px);
 }
+
+// Skills style
+.container {
+  display: grid;
+  grid-template-areas:
+    "box1 box2 box3"
+    "box4 box5 box6";
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+
+  .box-1 {
+    grid-area: box1;
+  }
+  .box-2 {
+    grid-area: box2;
+  }
+  .box-3 {
+    grid-area: box3;
+  }
+  .box-4 {
+    grid-area: box4;
+  }
+  .box-5 {
+    grid-area: box5;
+  }
+
+  .box {
+    width: 25%;
+    float: left;
+    padding: 10px;
+    h1 {
+      text-align: center;
+      color: $secondary-color;
+
+      background: lighten($primary-color, 1);
+      // text-transform: uppercase;
+      @include easeOut;
+    }
+    .chart {
+      position: relative;
+      width: 110px;
+      height: 110px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 30px;
+      line-height: 110px;
+    }
+  }
+}
+.container .box canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 @import "mobile";
